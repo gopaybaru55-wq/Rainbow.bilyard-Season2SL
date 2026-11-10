@@ -1,4 +1,10 @@
-const players = Array.from({ length: 32 }, (_, index) => ({
+const playerNames = [
+  "Benny Chandra",
+  "Markus Chandra",
+  "Steven Chow",
+  "Raja Sutan",
+];
+const players = playerNames.map((name, index) => ({
   number: index + 1,
   name: `Peserta ${String(index + 1).padStart(2, "0")}`,
 }));
