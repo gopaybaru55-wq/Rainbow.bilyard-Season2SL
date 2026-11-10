@@ -1,54 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tournament Billiard Rainbow Season 2 2026</title>
-<meta name="description" content="Official Tournament Billiard Rainbow Season 2 2026 - 9 Ball, 32 Players, Double Elimination.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rye&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c19">
+  <meta name="description" content="Tournament Billiard Rainbow Season 2 2026 — 9 Ball, 32 Players, Double Elimination.">
+  <title>Rainbow Billiard — Season 2 • 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Mono:wght@400;500&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<div class="lamp" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="masthead">
+      <div class="topline">
+        <a class="brand" href="#" aria-label="Rainbow Billiard beranda">
+          <span class="brand-ball" aria-hidden="true">9</span>
+          <span class="brand-name">RAINBOW <b>BILLIARD</b></span>
+        </a>
+        <span class="season-stamp">SEASON <b>02</b> <i>•</i> 2026</span>
+      </div>
 
-<header class="board">
-  <span class="badge">★ OFFICIAL TOURNAMENT 2026 ★</span>
-  <div class="balls" id="heroBalls" aria-hidden="true"></div>
-  <h1>Tournament<br><span>Billiard Rainbow</span></h1>
-  <p class="season">SEASON 2 &bull; 2026</p>
-  <div class="chips">
-    <span class="chip">9 BALL</span>
-    <span class="chip">32 PLAYERS</span>
-    <span class="chip">DOUBLE ELIMINATION</span>
-  </div>
-</header>
+      <section class="hero-board" aria-labelledby="event-title">
+        <div class="hero-light hero-light-left" aria-hidden="true"></div>
+        <div class="hero-light hero-light-right" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="official-badge"><span class="badge-star">✦</span> OFFICIAL TOURNAMENT 2026 <span class="badge-star">✦</span></div>
+          <p class="eyebrow">THE CUE • THE CROWD • THE CROWN</p>
+          <h1 id="event-title">TOURNAMENT<br><span>BILLIARD</span></h1>
+          <div class="rainbow-rule" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="season-title">RAINBOW <strong>SEASON 2</strong></p>
+          <div class="format-pills">
+            <span>9 BALL</span><span class="pill-dot">•</span><span>32 PLAYERS</span><span class="pill-dot">•</span><span>DOUBLE ELIMINATION</span>
+          </div>
+          <a class="cta-button" href="#players"><span>LIHAT DAFTAR PEMAIN</span><b aria-hidden="true">↓</b></a>
+        </div>
+        <div class="hero-side-note">EST. 2026 <span>★</span> RAINBOW LOUNGE</div>
+      </section>
+    </header>
 
-<div class="ticker" role="marquee" aria-label="Ucapan selamat datang">
-  <div class="ticker-track" id="ticker"></div>
-</div>
-
-<main>
-  <section>
-    <h2 class="title">Sponsor Resmi</h2>
-    <div class="sponsors" id="sponsors"></div>
-  </section>
-
-  <section>
-    <h2 class="title">Daftar 32 Peserta</h2>
-    <div class="tools">
-      <input id="search" type="search" placeholder="Cari nama peserta..." aria-label="Cari peserta">
-      <span class="count" id="count">32 / 32</span>
+    <div class="ticker" role="status" aria-label="Ucapan selamat datang">
+      <span class="ticker-label"><span class="live-dot"></span> LIVE FROM THE LOUNGE</span>
+      <div class="ticker-window"><p>SELAMAT DATANG DI TURNAMEN BILLIARD RAINBOW SEASON 2 2026 <b>✦</b> 32 PEMAIN • SATU GELAR JUARA <b>✦</b> SEMOGA BERUNTUNG DAN SELAMAT BERTANDING! <b>✦</b>&nbsp;</p></div>
     </div>
-    <div class="players" id="players"></div>
-    <p class="empty" id="empty" hidden>Peserta tidak ditemukan. Coba nama lain.</p>
-  </section>
-</main>
 
-<footer>
-  <p>Tournament Billiard Rainbow Season 2 &copy; 2026 &bull; Main bagus, jaga sportivitas.</p>
-</footer>
-<script src="script.js"></script>
+    <main>
+      <section class="sponsors section-wrap" aria-labelledby="sponsor-title">
+        <div class="section-heading">
+          <span class="heading-kicker">BACKED BY THE BEST</span>
+          <h2 id="sponsor-title">PARTNER <em>KAMI</em></h2>
+          <span class="heading-line" aria-hidden="true"></span>
+        </div>
+        <div class="sponsor-grid" aria-label="Sponsor turnamen">
+          <article class="sponsor-card"><span class="sponsor-mark mark-rack">R<span>✦</span>R</span><span class="sponsor-name">RACK &amp; ROLL</span><small>BILLIARD SUPPLY</small></article>
+          <article class="sponsor-card"><span class="sponsor-mark mark-gold">G<span>★</span>C</span><span class="sponsor-name">GOLDEN CUE</span><small>PREMIUM CUES</small></article>
+          <article class="sponsor-card"><span class="sponsor-mark mark-rainbow">R<span>↗</span></span><span class="sponsor-name">RAINBOW CAFE</span><small>LOUNGE &amp; GRILL</small></article>
+          <article class="sponsor-card"><span class="sponsor-mark mark-nine"><b>9</b></span><span class="sponsor-name">NINE BALL CLUB</span><small>PLAY LIKE A PRO</small></article>
+          <article class="sponsor-card"><span class="sponsor-mark mark-break">BREAK<span>!</span></span><span class="sponsor-name">BREAK TIME</span><small>GOOD TIMES HERE</small></article>
+        </div>
+        <p class="sponsor-note">LOGO DAN NAMA SPONSOR DAPAT DIGANTI SESUAI PARTNER RESMI</p>
+      </section>
+
+      <section class="players section-wrap" id="players" aria-labelledby="players-title">
+        <div class="section-heading">
+          <span class="heading-kicker">THE LINEUP IS SET</span>
+          <h2 id="players-title">DAFTAR <em>PEMAIN</em></h2>
+          <span class="heading-line" aria-hidden="true"></span>
+        </div>
+        <div class="roster-toolbar">
+          <p><span class="roster-count" id="roster-count">32</span> CUE ARTISTS <span class="toolbar-divider">/</span> 9 BALL • DOUBLE ELIMINATION</p>
+          <label class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <span class="sr-only">Cari nama peserta</span>
+            <input id="player-search" type="search" placeholder="CARI PEMAIN..." autocomplete="off">
+          </label>
+        </div>
+        <div class="player-grid" id="player-grid" aria-live="polite"></div>
+        <p class="roster-note">NAMA PESERTA SAAT INI ADALAH PLACEHOLDER — UBAH DI <code>script.js</code>.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-cue" aria-hidden="true"><span></span></div>
+      <p class="footer-title">MAKE YOUR <b>SHOT</b> COUNT.</p>
+      <p class="footer-meta">TOURNAMENT BILLIARD RAINBOW SEASON 2 <span>•</span> 2026</p>
+      <div class="footer-rule"><span>♣</span> PLAY WITH RESPECT <span>♣</span></div>
+    </footer>
+  </div>
 </body>
 </html>
